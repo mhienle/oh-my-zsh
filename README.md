@@ -1,3 +1,12 @@
+## Info
+
+### Used tools
+Install those first, see `tools/install_plugins.sh`.
+* [Z](https://github.com/rupa/z)
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+* [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+* [fzf](https://github.com/junegunn/fzf)
+
 <p align="center">
   <img src="https://s3.amazonaws.com/ohmyzsh/oh-my-zsh-logo.png" alt="Oh My Zsh">
 </p>
@@ -21,7 +30,7 @@ To learn more, visit [ohmyz.sh](https://ohmyz.sh) and follow [@ohmyzsh](https://
 __Disclaimer:__ _Oh My Zsh works best on macOS and Linux._
 
 * Unix-like operating system (macOS or Linux)
-* [Zsh](https://www.zsh.org) should be installed (v4.3.9 or more recent). If not pre-installed (`zsh --version` to confirm), check the following instruction here: [Installing ZSH](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
+* [Zsh](https://www.zsh.org) should be installed (v4.3.9 or more recent). If not pre-installed (`zsh --version` to confirm), check the following instruction here: [Installing ZSH](https://github.com/mhienle/oh-my-zsh/wiki/Installing-ZSH)
 * `curl` or `wget` should be installed
 * `git` should be installed
 
@@ -32,13 +41,13 @@ Oh My Zsh is installed by running one of the following commands in your terminal
 #### via curl
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/mhienle/oh-my-zsh/master/tools/install.sh)"
 ```
 
 #### via wget
 
 ```shell
-sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(wget -O- https://raw.githubusercontent.com/mhienle/oh-my-zsh/master/tools/install.sh)"
 ```
 
 #### Manual inspection
@@ -48,7 +57,7 @@ that by downloading the install script first, looking through it so everything l
 then running it:
 
 ```shell
-curl -Lo install.sh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+curl -Lo install.sh https://raw.githubusercontent.com/mhienle/oh-my-zsh/master/tools/install.sh
 sh install.sh
 ```
 
@@ -159,7 +168,7 @@ flag `--unattended` to the `install.sh` script. This will have the effect of not
 the default shell, and also won't run `zsh` when the installation has finished.
 
 ```shell
-curl -Lo install.sh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+curl -Lo install.sh https://raw.githubusercontent.com/mhienle/oh-my-zsh/master/tools/install.sh
 sh install.sh --unattended
 ```
 
@@ -167,7 +176,7 @@ sh install.sh --unattended
 
 The install script also accepts these variables to allow installation of a different repository:
 
-- `REPO` (default: `robbyrussell/oh-my-zsh`): this takes the form of `owner/repository`. If you set
+- `REPO` (default: `mhienle/oh-my-zsh`): this takes the form of `owner/repository`. If you set
   this variable, the installer will look for a repository at `https://github.com/{owner}/{repository}`.
 
 - `REMOTE` (default: `https://github.com/${REPO}.git`): this is the full URL of the git repository
@@ -191,7 +200,7 @@ REPO=apjanke/oh-my-zsh BRANCH=edge sh install.sh
 ##### 1. Clone the repository:
 
 ```shell
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone https://github.com/mhienle/oh-my-zsh.git ~/.oh-my-zsh
 ```
 
 ##### 2. *Optionally*, backup your existing `~/.zshrc` file:
